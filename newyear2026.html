@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year 2026</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            margin-top: 20%;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id="count">10</div>
+
+<script>
+let count = 10;
+
+let timer = setInterval(() => {
+    if (count > 0) {
+        document.getElementById("count").innerText = count;
+        count--;
+    } else {
+        document.getElementById("count").innerText = "🎉 HAPPY NEW YEAR 2026 🎉";
+        clearInterval(timer);
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
